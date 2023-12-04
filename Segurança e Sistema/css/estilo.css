@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Italianno&family=Just+Another+Hand&family=Pinyon+Script&family=Sacramento&family=Tangerine&display=swap');
+
+:root{
+    --corPrincipal: bisque;
+    --corSecundaria:rgb(241, 110, 110);
+    --letrasCursivas:'Dancing Script', cursive;
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:
+    var(--corSecundaria); /*Muda a cor de fondo */
+    font-size: 20px;
+}
+
+header{
+    padding-top: 50px;
+    padding-bottom: 30px; /* Espaço interno para baixo */
+    width: 50vw;
+    margin: 0 auto;
+}
+ main{
+    background-color: var(--corPrincipal);
+    padding-top: 60px; /*Espaço interno para cima */
+ }
+
+
+.titulo-principal{
+    color: black;/*cor do texto*/
+    font-weight: bold; /*Deifine negrito, ou não no texto */
+    font-size: 4rem; /* tamanho da fonte.3x mais que o padrão*/
+    text-transform: uppercase; /* transforma texto em maiúsculo*/
+    font-family:'Just Another Hand', cursive;/* Define a fonte*/
+    text-shadow: 2px 2px 2px rgb(223, 114, 13);/*Sombra ao redor do texto*/
+    text-align: center;/*Alinhamento do texto: centralizado*/
+    padding: 50px;
+}
+
+h2{
+    font-style: italic; /* texto em itálio*/
+    font-size: 25px; /*tamanho da fonte.Em px fica fixo */
+    text-align: center;/*centraliza o texto*/
+}
+
+a{
+    text-decoration: none; /* define o subliar */
+    color: darkslategrey;
+}
+
+.msg-erro{
+    visibility: hidden;/*Ocutar o texto*/
+}
+
+.menu{
+    list-style: none; /*Desativa as bolinhas de uma lista */
+    font-size: 18;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    text-shadow: 4px 3px 4px mistyrose;
+    display: flex; /*coloca os elementos filhos inline 9em linha)*/
+    justify-content: space-around; /*alinhamento dos elementos filho*/
+}
+
+.formulario{
+    list-style: none; 
+}
+
+.cxCentralizada{
+    margin: 0 auto; /*Margem zerada em cima e embaixo e automatico nas laterais para centralizar*/
+    width: 200px; /*Largura que é a mesma dos tamanhos do input*/
+}
+
+h3{
+    margin: 30px;
+    font-family: 'DM Serif Display' serif;
+    text-shadow:  4px 3px 4px rgb(23, 58, 23);
+}
+
+.album-fotos{
+    margin: 15px auto;/**/
+    border-width: 5px;/*Largura da borda*/
+    border-style: double;/*Estilo da linha da borda*/
+    border-color: darkgoldenrod; /*cor da borda*/
+    border-radius: 20px;/*arrendonda a borda*/
+    width: 250px; /*Largura */
+}
+
+.lista-fotos{
+    list-style: none; /*Desativa as bolinhas de uma lista */
+    display: flex;
+    justify-content: space-around;
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+/*formatação do formulario*/
+input[type=text]{
+    background-color: rgb(233, 163, 122);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px; /*arredondar as bordas*/
+}
+input[type=email]{
+    background-color: burlywood;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 20px; /*arredondar as bordas*/
+}
+input[type=tel]{
+    background-color: burlywood;
+    padding:10px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 20px; /*arredonda as bordas*/
+}
+textarea,
+select{
+    background-color: burlywood;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+/*legenda na frete de cada input*/
+label{
+    color: rgb(8, 44, 8);
+    text-align: left; /*Aliamento a esquerda*/
+    margin: 0px; /*margem zerada para fica colado aos inputs*/
+    display: block; /*Bloqueia a linha para ser o único elemento*/
+    border-radius: 20px; /*arredondar as bordas*/
+}
+
+
+input[type=file]{
+    background-color: rgb(236, 177, 99);
+}
+
+
+button{
+    background-color:darkgoldenrod;/*cor de fondo*/
+    color: rgb(39, 17, 9); /*cor do texto*/
+    font-size: 16px;
+    padding: 15px;/*espaço ao redor do conteudo interno*/
+    margin: 20px;/*espaço ao redor do elemento externo*/
+    border: 0px;
+    border-radius: 20px; /*arredondar as bordas*/
+    width: 200px; /*Largura*/
+    text-transform: uppercase; /*texto em maiusculo*/
+
+    transition: background-color 1s ease; /*transição cor de fundo*/
+
+}
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=localdafoto]:focus{
+    background-color: cadetblue;
+    color: rgb(0, 0, 0);
+
+}
+
+/*botão no estado de passar o mouse em cima */
+button:hover{
+    background-color: aquamarine; /*novo valor da cor de fundo ao passar o mouse */
+    transform: scale(1.2);
+   /*transform: rotate(45deg); dar grau e vira no sentido horario*/
+   
+}
+
+input[type=file]{
+    display: none; /*tornar oculto*/
+}
+
+.enviafotos{
+    padding: 10px; /*Espaço entre conteúdo interno*/
+    width: 200px; /*Largura*/
+    background-color:darksalmon; /*cor do fundo*/
+    color:black; /*cor do texto*/
+    text-transform: uppercase; /*texto em maiusculo*/
+    text-align: center; /*Aliamento do texto centralizado*/
+    display: block; /* display em uma linha única*/
+    margin-top: 10px; /*margem externa superior*/
+    cursor: pointer; /*ponteiro em formato de mãozinha */
+}
+.fotos{
+    width: 20vw;
+}
+
+.formulario{
+    width: 50vw;
+    margin: 0 auto;
+}

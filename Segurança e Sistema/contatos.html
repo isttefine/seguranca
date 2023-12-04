@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head><!--informacoes para o navegador e buscadores -->
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="/img/pensamento.png">
+        <link rel="stylesheet" href="css/estilo.css"/>
+    </head>
+    <body><!--Aquilo que o usuario visualiza-->
+        <!--cabeçalho do site-->
+       <header> 
+            <h1 class="titulo-principal">Segurança Digital</h1>
+            <nav>  <!-- menu de Navegação -->
+                <ul class="menu">
+                    <li> <a href="index.html"> Início </a> </li>
+                    <li> <a href="Introdução.html">Introdução</a></li>
+                    <li> <a href="contatos.html">Contatos</a></li>
+                    <li> <a href="malwares.html">Malwares</a></li>
+                    <li> <a href="fotos.html">Fotos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main><!--Conteudo Principal-->
+            <h2>Contatos</h2>
+            <ul class="formulario">
+                <form>
+                    <li>
+                        <label for="nome">Nome</label>
+                        <input type="text" nome="nome" id="nome" required placeholder="Digite seu nome completo" autofocus  minlength="2"/>
+                    </li>
+                    <li>
+                       <label for="email">E-mail:</label>
+                       <input type="email" name="email" id="email" required placeholder="Digite seu e-mail que você usa" minlength="5"/>
+                    </li>
+                    <li>
+                       <label for="telefone">Telefone:</label>
+                       <input type="tel" name="telefone" id="telefone" placeholder="Ex:(081)36811415" minlength="8"/>
+                    </li>
+                    <li>
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado">
+                           <option value="AC">Acre</option>
+                           <option value="AL">Alagoas</option>
+                           <option value="AM">Amazonas</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" minlength="3"/>
+                    </li>
+                    <li>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem"></textarea>
+                    </li>
+                    <li>
+                        <!-- <input type="radio" name="opcao-contatos" id="opcao-contato-w"/>-->
+                        <input type="checkbox" name="opcao-contatos" id="opcao-contatos-w"/>
+                        <label for="opcao-contatos">Contato por whatsapp</label>
+
+                        <!-- <input type="radio" name="opcao-contatos" id="opcao-contato-e"/> -->
+                    
+                        <!--<input type="checkbox" name="opcao-contatos" id="opcao-contatos-e" value="email" checked /> -->
+
+                        <input type="checkbox" name="opcao-contatos" id="opcao-contatos-e" value="email" checked />
+                        <label for="opcao-contatos">Contato por E-mail </label>
+                    </li>
+                    <li>
+                        <button type="submit" onclick="oi()">Enviar sua mensagem</button>
+                    </li>
+                </form>
+            </ul>
+        </main>
+        <footer>
+            <p>Contatos:Amabillis_@hotmail.com</p>
+        </footer>
+        <script src="js/teste.js"></script>
+    </body>
+</html>
